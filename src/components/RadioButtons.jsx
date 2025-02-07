@@ -1,4 +1,5 @@
-function RadioButtons(handleChange) {
+/* eslint-disable react/prop-types */
+function RadioButtons({formData, handleChange}) {
     return (
         <>
             <ul>
@@ -9,6 +10,7 @@ function RadioButtons(handleChange) {
                     name="color"
                     value="1"
                     onChange={handleChange}
+                    checked={formData.color === "1"}
                     /><label
                     htmlFor="color-one"
                     >1</label
@@ -20,6 +22,7 @@ function RadioButtons(handleChange) {
                     name="color"
                     value="2"
                     onChange={handleChange}
+                    checked={formData.color === "2"}
                     /><label
                     htmlFor="color-two"
                     >2</label
@@ -32,6 +35,7 @@ function RadioButtons(handleChange) {
                     name="color"
                     value="3"
                     onChange={handleChange}
+                    checked={formData.color === "3"}
                     /><label
                     htmlFor="color-three"
                     >3</label
@@ -44,6 +48,7 @@ function RadioButtons(handleChange) {
                     name="color"
                     value="4"
                     onChange={handleChange}
+                    checked={formData.color === "4"}
                     /><label
                     htmlFor="color-four"
                     >4</label

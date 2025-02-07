@@ -1,11 +1,12 @@
-function CheckBoxes(handleChange) {
+/* eslint-disable react/prop-types */
+function CheckBoxes({handleChange}) {
     return (
         <>
             <ul>
                 <li>
                     <label
                     ><input
-                        name="spend-time"
+                        name="spendTime"
                         type="checkbox"
                         value="swimming"
                         onChange={handleChange}
@@ -15,7 +16,7 @@ function CheckBoxes(handleChange) {
                 <li>
                     <label
                     ><input
-                    name="spend-time"
+                    name="spendTime"
                     type="checkbox"
                     value="bathing"
                     onChange={handleChange}
@@ -25,7 +26,7 @@ function CheckBoxes(handleChange) {
                 <li>
                     <label
                     ><input
-                        name="spend-time"
+                        name="spendTime"
                         type="checkbox"
                         value="chatting"
                         onChange={handleChange}
@@ -34,11 +35,12 @@ function CheckBoxes(handleChange) {
                 </li>
                 <li>
                     <label
-                    ><input name="spend-time"
+                    ><input name="spendTime"
                     type="checkbox"
                     value="noTime"
                     onChange={handleChange}
-                    />I don&apost like to
+                    // eslint-disable-next-line react/no-unescaped-entities
+                    />I don't like to
                     spend time with it</label
                     >
                 </li>
